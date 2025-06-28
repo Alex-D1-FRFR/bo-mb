@@ -4,9 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(112, 98, 125);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+.formwrapper{
+    background-color: rgb(179, 153, 203);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 400px; ;
+}
+.formwrapper h2 {
+    font-size: 15px;
+    text-align: center;
+    color: rgb(179, 162, 194);
+    margin-bottom: 30px;
+}
+label {
+    margin-top: 10.5px;
+    display: block;
+    font-weight: 600;
+    color: rgb(93, 85, 100);
+}
+input,textarea {
+    width: 100%;
+    background-color: rgb(31, 4, 55);
+    padding: 10px;
+margin-top: 6px;
+border: 3px solid rgb(112, 37, 112);
+border-radius: 12.76567px;
+color: rgb(140, 122, 157);
+}
+button{
+    width: 100%;
+    padding: 21px;
+border-radius: 20px;
+background-color: rgb(198, 167, 228);
+color: rgb(84, 71, 97);
+font-size: x-large;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+    </style>
 </head>
 <body>
-    <h2>conhtact us
+    <div class="formwrapper">
+<h2>Contact us</h2>
     <form action="">
         <label for="name">name
         </label>
@@ -17,7 +65,8 @@
             <input type="tel" id="phone" placeholder="example:43412345678">
             <label for="message">message</label>
             <textarea name="message" id="message" rows="4" placeholder="wrtite you messag here!" ></textarea>
+            <button>Send Message</button>
     </form>
-    </h2>
+    </div>
 </body>
 </html>
